@@ -1,0 +1,20 @@
+<html>
+    <body>
+    <script src="./modules/is-private-mode/distrib/is-private-navigation.min.js"></script>
+    <h2 id="navigationMode"></h2>
+    <script>
+        isPrivateMode().then(function(isPrivate) {            
+            var elem=document.querySelector("#navigationMode");
+            var text="";
+            if (isPrivate) {
+                text="You are using Private Navigation";
+            }
+            else {
+                text="You are using Normal Navigation Mode";
+            }
+            elem.innerHTML=text;
+        });
+    </script>
+    </body>
+
+</html>

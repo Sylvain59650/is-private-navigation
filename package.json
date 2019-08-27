@@ -1,0 +1,36 @@
+{
+  "name": "is-private-navigation",
+  "version": "0.9.0",
+  "description": "detect Incognito Mode navigation",
+  "main": "dist/is-private-navigation.min.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylvain59650/is-private-navigation.git"
+  },
+  "keywords": [
+    "private",
+    "navigation"
+  ],
+  "author": "sylvain59",
+  "maintainers": [
+    {
+      "name": "sylvain59",
+      "email": "slongepee@laposte.net"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "babel-core": "^6.26.3",
+    "babel-plugin-remove-comments": "^2.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  }
+}
