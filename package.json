@@ -2,7 +2,7 @@
   "name": "is-private-navigation",
   "version": "0.9.0",
   "description": "detect Incognito Mode navigation",
-  "main": "dist/is-private-navigation.min.js",
+  "main": "distribgit/is-private-navigation.min.js",
   "scripts": {
     "test": "exit 0"
   },
