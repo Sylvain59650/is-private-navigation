@@ -18,7 +18,7 @@ Detects Incognito Mode Navigation in browsers
     <script src="node_modules/is-private-navigation/distrib/is-private-navigation.min.js"></script>
 ## Example
 
-   isPrivateMode().then(function(isPrivate) {            
+    isPrivateMode().then(function(isPrivate) {            
             if (isPrivate) {
                 console.log("You are using Private Navigation");
             }
@@ -26,6 +26,9 @@ Detects Incognito Mode Navigation in browsers
                 console.log("You are using Normal Navigation Mode");
             }
         });
+
+## Test Online
+[click here](https://sylvain59650.github.io/is-private-navigation/)
 
 ## License
 The license is MIT
