@@ -13,9 +13,12 @@
 
 Detects Incognito Mode Navigation in browsers
 
+## Works for IE11, Edge 17, FireFox 68, Chrome 76, Safari
+
 ## References the script
 
     <script src="node_modules/is-private-navigation/distrib/is-private-navigation.min.js"></script>
+    
 ## Example
 
     isPrivateMode().then(function(isPrivate) {            
@@ -26,6 +29,12 @@ Detects Incognito Mode Navigation in browsers
                 console.log("You are using Normal Navigation Mode");
             }
         });
+
+## For IE 11,
+you need to load script to define Promise polyfill
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.min.js"></script>
+
 
 ## Test Online
 [click here](https://sylvain59650.github.io/is-private-navigation/)

@@ -11,11 +11,10 @@ gulp.task("default", () => {
     .pipe(babel({
       babelrc: false,
       plugins:["@babel/plugin-transform-arrow-functions","@babel/plugin-transform-destructuring"],
-      compact: false,
+      compact: true,
       comments: false,
-      minified: false
+      minified: true
     }))
     .pipe(gulp.dest("./distrib"))
+    .pipe(gulp.dest("./docs/modules/is-private-mode/distrib"))
 });
-
-//gulp.task("default", ["is-private-navigation.min.js"]);

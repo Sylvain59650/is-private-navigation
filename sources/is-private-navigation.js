@@ -2,7 +2,7 @@ function isPrivateMode() {
     return new Promise((resolve) => {
         const yes = () => resolve(true); // is in private mode
         const not = () => resolve(false); // not in private mode
-        const testLocalStorage = () => {
+        const testSafariLesserThan11 = () => {
             try {
                 if (localStorage.length) not();
                 else {
@@ -22,7 +22,6 @@ function isPrivateMode() {
         if (window.chrome) {
             if ('storage' in navigator && 'estimate' in navigator.storage) {
                 navigator.storage.estimate().then(function (ram) {
-                    debugger;
                     if (ram.quota < 120000000) {
                         yes();
                     } else {
@@ -53,7 +52,7 @@ function isPrivateMode() {
         const isSafari = navigator.userAgent.match(/Version\/([0-9\._]+).*Safari/);
         if (isSafari) {
             const version = parseInt(isSafari[1], 10);
-            if (version < 11) return testLocalStorage();
+            if (version < 11) return testSafariLesserThan11();
             try {
                 window.openDatabase(null, null, null, null);
                 return not();
