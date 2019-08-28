@@ -35,9 +35,9 @@ isPrivateMode().then(function(isPrivate) {
 
 ## For IE 11,
 you need to load script to define Promise polyfill
-
+```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.min.js"></script>
-
+```
 
 ## Test Online
 [click here](https://sylvain59650.github.io/is-private-navigation/)
