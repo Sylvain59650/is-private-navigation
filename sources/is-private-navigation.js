@@ -21,8 +21,9 @@ function isPrivateMode() {
          //Chrome
         if (window.chrome) {
             if ('storage' in navigator && 'estimate' in navigator.storage) {
-                navigator.storage.estimate().then(function ({ usage, quota }) {
-                    if (quota < 120000000) {
+                navigator.storage.estimate().then(function (ram) {
+                    debugger;
+                    if (ram.quota < 120000000) {
                         yes();
                     } else {
                         not();

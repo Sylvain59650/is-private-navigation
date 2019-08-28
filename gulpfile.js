@@ -3,15 +3,17 @@ const gulp = require("gulp");
 const concat = require("gulp-concat");
 
 
-gulp.task("is-private-navigation.min.js", () => {
+gulp.task("default", () => {
   return gulp.src([
       "sources/is-private-navigation.js"
     ])
     .pipe(concat("is-private-navigation.min.js"))
     .pipe(babel({
-      compact: true,
+      babelrc: false,
+      plugins:["@babel/plugin-transform-arrow-functions","@babel/plugin-transform-destructuring"],
+      compact: false,
       comments: false,
-      minified: true
+      minified: false
     }))
     .pipe(gulp.dest("./distrib"))
 });
