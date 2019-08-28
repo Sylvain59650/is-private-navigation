@@ -16,19 +16,22 @@ Detects Incognito Mode Navigation in browsers
 ## Works for IE11, Edge 17, FireFox 68, Chrome 76, Safari
 
 ## References the script
+```html
+<script src="node_modules/is-private-navigation/distrib/is-private-navigation.min.js"></script>
+```
 
-    <script src="node_modules/is-private-navigation/distrib/is-private-navigation.min.js"></script>
-    
 ## Example
 
-    isPrivateMode().then(function(isPrivate) {            
-            if (isPrivate) {
-                console.log("You are using Private Navigation");
-            }
-            else {
-                console.log("You are using Normal Navigation Mode");
-            }
-        });
+```html
+isPrivateMode().then(function(isPrivate) {            
+    if (isPrivate) {
+        console.log("You are using Private Navigation");
+    }
+    else {
+        console.log("You are using Normal Navigation Mode");
+    }
+});
+```
 
 ## For IE 11,
 you need to load script to define Promise polyfill
