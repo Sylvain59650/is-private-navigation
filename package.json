@@ -12,7 +12,8 @@
   },
   "keywords": [
     "private",
-    "navigation","Incognito"
+    "navigation",
+    "Incognito"
   ],
   "author": "sylvain59",
   "maintainers": [
@@ -34,5 +35,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.19"
+  }
 }

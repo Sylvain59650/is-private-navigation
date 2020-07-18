@@ -11,16 +11,16 @@
 [![hits](http://hits.dwyl.com/Sylvain59650/is-private-navigation.svg)](http://hits.dwyl.com/Sylvain59650/is-private-navigation)
 </div>
 
-Detects Incognito Mode Navigation in browsers
+# Detects Incognito Mode Navigation in browsers
 
-## Works for IE11, Edge 17, FireFox 68, Chrome 76, Safari
+### Works for IE11, Edge 17, FireFox 68, Chrome 76-83, Safari, Brave 1.10
 
-## References the script
+### Reference the script
 ```html
 <script src="node_modules/is-private-navigation/distrib/is-private-navigation.min.js"></script>
 ```
 
-## Example
+### Example
 
 ```html
 isPrivateMode().then(function(isPrivate) {            
@@ -33,16 +33,16 @@ isPrivateMode().then(function(isPrivate) {
 });
 ```
 
-## For IE 11,
+### For IE 11,
 you need to load script to define Promise polyfill
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.min.js"></script>
 ```
 
-## Test Online
+### Test Online
 [click here](https://sylvain59650.github.io/is-private-navigation/)
 
-## License
+### License
 The license is MIT
 
 Author: [Sylvain Longepée](https://github.com/Sylvain59650)
